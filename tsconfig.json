@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noImplicitAny": false
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.js", "utils/firebase.js", "components/Presentacion.js", "components/CarruselApps/CarruselApps.js", "components/Header.js", "components/WhatsApp.js", "components/Suscripcion.js", "components/Footer.js", "pages/_app.js", "components/Dashboard.js", "layouts/BasicLayout.js"],
+  "exclude": ["node_modules"]
+}

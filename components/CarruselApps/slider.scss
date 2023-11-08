@@ -1,0 +1,96 @@
+.slick-list{
+  height: fit-content;
+}
+
+
+
+.slick-slide{
+  padding: 0 50px;
+  height: 100%;
+  width: 100%;
+  
+
+  @media (max-width: 1024px) {
+    padding-left: 5px;
+    padding-right: 20px;
+    
+  }
+
+  @media (max-width: 350px) {
+    height: fit-content;
+  }
+}
+
+.slick-track{
+ overflow: hidden;
+  width: 100vw;
+  height: 100%;
+
+  @media (max-width: 1024px) {
+    height: 100%;
+    
+  }
+}
+
+
+
+.pb-12.pt-24 {
+  .center {
+    
+    max-width: 100%;
+    height: fit-content;
+    
+
+    .slick-arrow {
+      width: 20px;
+      height: 20px;
+      z-index: 3;
+
+      @media (max-width: 770px) {
+        display: none !important;
+      }
+
+      &::before {
+        display: none;
+      }
+      &.slick-prev {
+        background-image: url(../../public/assets/Icono-Flecha-Izq.png);
+        background-size: cover;
+        left: 5%;
+      }
+
+      &.slick-next {
+        background-image: url(../../public/assets/Icono-Flecha-derecha.png);
+        background-size: cover;
+        right: 5%;
+      }
+    }
+
+    .slick-dots {
+      .slick-active {
+        background-color: grey;
+        border-radius: 50px;
+        
+
+        //display: flex;
+        ::before {
+          display: none;
+        }
+      }
+
+      ::before {
+        display: none;
+      }
+      li {
+        width: 50px;
+        height: 10px;
+        border: solid 1px grey;
+        border-radius: 50px;
+        button {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
